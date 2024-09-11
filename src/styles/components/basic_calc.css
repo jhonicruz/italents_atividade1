@@ -1,0 +1,36 @@
+.main_container {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.bc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+.bc__calc {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-basis: 50%;
+  min-height: 400px;
+}
+
+.bc__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: 50%;
+  line-height: 1.4;
+}
+
+.bc__content h1 {
+  font-family: 'poppinsbold';
+  font-size: 6rem;
+  color: var(--primaryColor);
+}

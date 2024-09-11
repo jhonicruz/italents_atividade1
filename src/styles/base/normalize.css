@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'robotoregular';
+  font-size: 1.6rem;
+  background-color: var(--neutral01);
+  color: var(--neutral04);
+  padding: 1rem;
+}
+
+.global_container {
+  max-width: 1440px;
+}
