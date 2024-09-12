@@ -24,36 +24,38 @@
         <div class="bc">
           <div class="bc__calc">
             <div class="bc_calc__wrapper">
-              <p class="bc__result">Resultado</p>
+              <p class="bc__result"></p>
 
               <table class="bc__table">
                 <tr>
-                  <td><button>C</button></td>
-                  <td><button><</button></td>
-                  <td><button>/</button></td>
-                  <td><button>X</button></td>
+                  <td><button class="btnClear">C</button></td>
+                  <td><button class="back"><</button></td>
+                  <td><button class="operators">/</button></td>
+                  <td><button class="operators">X</button></td>
                 </tr>
                 <tr>
-                  <td><button>7</button></td>
-                  <td><button>8</button></td>
-                  <td><button>9</button></td>
-                  <td><button>-</button></td>
+                  <td><button class="btnNumbers" onclick="insert('7')">7</button></td>
+                  <td><button class="btnNumbers">8</button></td>
+                  <td><button class="btnNumbers">9</button></td>
+                  <td><button class="operators">-</button></td>
                 </tr>
                 <tr>
-                  <td><button>4</button></td>
-                  <td><button>5</button></td>
-                  <td><button>6</button></td>
-                  <td><button>+</button></td>
+                  <td><button class="btnNumbers">4</button></td>
+                  <td><button class="btnNumbers">5</button></td>
+                  <td><button class="btnNumbers">6</button></td>
+                  <td><button class="operators">+</button></td>
                 </tr>
                 <tr>
-                  <td><button>1</button></td>
-                  <td><button>2</button></td>
-                  <td><button>3</button></td>
+                  <td><button class="btnNumbers">1</button></td>
+                  <td><button class="btnNumbers">2</button></td>
+                  <td><button class="btnNumbers">3</button></td>
                   <td rowspan="2"><button id="equal">=</button></td>
                 </tr>
                 <tr>
-                  <td colspan="2"><button id="zero">0</button></td>
-                  <td><button>.</button></td>
+                  <td colspan="2">
+                    <button id="zero" class="btnNumbers">0</button>
+                  </td>
+                  <td><button class="btnNumbers">.</button></td>
                 </tr>
               </table>
             </div>
@@ -73,6 +75,12 @@
         </div>
       </main>
     </div>
+
+    <script>
+      function insert(num) {
+        console.log(num);
+      }
+    </script>
 
     <script type="module" src="src/js/main.js"></script>
   </body>
