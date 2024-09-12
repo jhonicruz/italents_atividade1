@@ -1,24 +1,25 @@
 .main_container {
-  height: 500px;
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 }
 .bc {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100%;
+  padding: 2rem;
+
+  gap: 1rem;
 }
 .bc__calc {
   display: flex;
   justify-content: center;
-
+  overflow: hidden;
   align-items: center;
   flex-basis: 50%;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .bc__content {
@@ -31,6 +32,70 @@
 
 .bc__content h1 {
   font-family: 'poppinsbold';
-  font-size: 6rem;
+  font-size: clamp(4rem, 6vw, 8rem);
   color: var(--primaryColor);
+  line-height: 1;
+}
+
+.bc_calc__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--neutral03);
+  padding: 2.5rem 2rem;
+  width: 33rem;
+  height: 50rem;
+  border-radius: 6px;
+}
+
+.bc__table {
+  height: 100%;
+}
+
+.bc__table tr {
+  text-align: center;
+
+  margin: 5px;
+  padding: 5px;
+  height: 65px;
+}
+
+.bc__table tr td {
+  width: 60px;
+}
+
+.bc__table td button {
+  padding: 2rem;
+  width: 55px;
+  height: 60px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: var(--boxShadow);
+  border-radius: 3px;
+  font-size: 2.2rem;
+  transition: 350ms;
+}
+
+.bc__table td button:hover {
+  background-color: darkgray;
+}
+
+.bc__table td button#zero {
+  width: 130px;
+}
+.bc__table td button#equal {
+  height: 135px;
+}
+
+.bc__result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 6rem;
+  padding: 1rem;
+  box-shadow: var(--boxShadow);
+  border-radius: 3px;
 }
