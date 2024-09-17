@@ -6,8 +6,12 @@ export default function initCalc() {
   const back = document.querySelector('.back');
   const btnEqual = document.querySelector('#equal');
 
+  btnOperators.forEach((btn) => {
+    console.log(btn.innerHTML);
+  });
+
   function insert({ target }) {
-    const number = target.innerText;
+    const number = target.innerHTML;
     result.innerHTML += number;
   }
 
@@ -16,7 +20,8 @@ export default function initCalc() {
   }
 
   function calculate() {
-    result.innerHTML = eval(result.innerHTML);
+    const expression = result.innerHTML.replace(/x/g, '*');
+    result.innerHTML = eval(expression);
   }
 
   back.addEventListener('click', () => {
