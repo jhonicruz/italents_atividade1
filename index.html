@@ -11,8 +11,17 @@
       <header class="header">
         <a href="#" class="header__logo">Logo</a>
 
-        <nav class="header__nav">
-          <ul>
+        <nav class="nav">
+          <button
+            id="btn-mobile"
+            aria-expanded="false"
+            aria-controls="menu"
+            aria-haspopup="true"
+            aria-label="Abrir Menu"
+          >
+            <span id="hamburguer"></span>
+          </button>
+          <ul id="menu" role="menu">
             <li><a href="#">CALC</a></li>
             <li><a href="#">IMC</a></li>
             <li><a href="#">TODOLIST</a></li>
