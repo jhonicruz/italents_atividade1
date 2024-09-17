@@ -2,3 +2,4 @@
 @import './variables/variables.css';
 @import './components/header.css';
 @import './components/basic_calc.css';
+@import './components/todolist.css';

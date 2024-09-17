@@ -83,13 +83,45 @@
           </div>
         </div>
       </main>
-    </div>
 
-    <script>
-      function insert(num) {
-        console.log(num);
-      }
-    </script>
+      <section class="todolist-container">
+        <div class="todolist__content">
+          <h2>TODOLIST</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="todolist__wrapper">
+          <form id="todolist__form">
+            <div class="todolist__control">
+              <input type="text" placeholder="Adicione uma tarefa" />
+              <button id="todlist__btn">
+                <img src="src/assets/images/plus.svg" alt="add task" />
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="todolist__wrapper tasks">
+          <div class="todolist__control todolist__control--task">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" value="Task 1" name="tasks" />
+                  Task 1
+                  <button type="button" class="btn-removeTask">
+                    <img src="src/assets/images/trash.svg" alt="remove task" />
+                  </button>
+                </label>
+                <hr />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <script type="module" src="src/js/main.js"></script>
   </body>
