@@ -14,13 +14,115 @@
   font-family: 'poppinsbold';
 }
 
-.header__nav ul {
+.nav {
   display: flex;
-  gap: 2.4rem;
+  align-items: center;
 }
 
-.header__nav ul li a {
-  color: var(--neutral04);
+#btn-mobile {
+  display: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
   font-family: 'poppinsbold';
-  letter-spacing: 1px;
+  color: var(--neutral04);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+#hamburguer {
+  width: 20px;
+  border-top: 2px solid;
+  display: none;
+}
+
+#hamburguer::after,
+#hamburguer::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  display: block;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+
+  gap: 2.4rem;
+  font-family: 'poppinsbold';
+}
+#menu li {
+  height: 100%;
+}
+
+#menu li a {
+  display: flex;
+  align-items: center;
+  color: var(--neutral04);
+  height: 100%;
+}
+
+@media (max-width: 50.6rem) {
+  /* nav com a classe ativo */
+  .nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  /*  Ativar efeitos quando nav tiver com a classe ativo*/
+  .nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  .nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /* Mostrar hamburguer */
+  #btn-mobile {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #hamburguer {
+    display: block;
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: absolute;
+    gap: 2rem;
+    width: 100%;
+    top: 80px;
+    right: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu li {
+    height: 100px;
+  }
+  .nav.active #menu {
+    height: calc(100vh);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    color: var(--neutral04);
+    font-family: 'poppinsbold';
+    letter-spacing: 1px;
+    font-size: 3.2rem;
+    padding: 1rem;
+  }
 }
