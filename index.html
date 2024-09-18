@@ -107,15 +107,25 @@
         <div class="todolist__wrapper">
           <ul class="todolist__tasks">
             <li>
-              <label>
-                <input type="checkbox" value="Task 1" name="tasks" />
-                Task 1
-                <button type="button" class="btn-removeTask">
-                  <img src="src/assets/images/trash.svg" alt="remove task" />
-                </button>
-              </label>
-              <hr />
+              <div class="task-control">
+                <input type="checkbox" value="Task 1" name="tasks" id="task1" />
+                <label for="task1"> Task 1 </label>
+              </div>
+              <button type="button" class="btn-removeTask">
+                <img src="src/assets/images/trash.svg" alt="remove task" />
+              </button>
             </li>
+            <hr />
+            <li>
+              <div class="task-control">
+                <input type="checkbox" value="Task 2" name="tasks2" id="task2" />
+                <label for="task2"> Task 2 </label>
+              </div>
+              <button type="button" class="btn-removeTask">
+                <img src="src/assets/images/trash.svg" alt="remove task" />
+              </button>
+            </li>
+            <hr />
           </ul>
         </div>
       </section>
