@@ -83,13 +83,75 @@
           </div>
         </div>
       </main>
-    </div>
+      <hr />
+      <section class="todolist-container">
+        <div class="todolist__content">
+          <h2>TODOLIST</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
 
-    <script>
-      function insert(num) {
-        console.log(num);
-      }
-    </script>
+        <div class="todolist__wrapper">
+          <form id="todolist__form">
+            <div class="todolist__control">
+              <input type="text" placeholder="Adicione uma tarefa" class="todolist__input" />
+              <button id="todolist__btn">
+                <img src="src/assets/images/plus.svg" alt="add task" />
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="todolist__wrapper">
+          <ul class="todolist__tasks">
+            <li>
+              <div class="task-control">
+                <input type="checkbox" value="Task 1" name="tasks" id="task1" />
+                <label for="task1"> Task 1 </label>
+              </div>
+              <button type="button" class="btn-removeTask">
+                <img src="src/assets/images/trash.svg" alt="remove task" />
+              </button>
+            </li>
+            <hr />
+            <li>
+              <div class="task-control">
+                <input type="checkbox" value="Task 2" name="tasks2" id="task2" />
+                <label for="task2"> Task 2 </label>
+              </div>
+              <button type="button" class="btn-removeTask">
+                <img src="src/assets/images/trash.svg" alt="remove task" />
+              </button>
+            </li>
+            <hr />
+          </ul>
+        </div>
+
+        <div>
+          <div class="todolist__wrapper">
+            <p class="tasks-completed">Completed</p>
+            <ul class="todolist__tasks completed">
+              <li>
+                <div class="task-control">
+                  <input type="checkbox" value="Task 01" name="tasks01" id="task01" checked />
+                  <label for="task01"> Task 1 </label>
+                </div>
+              </li>
+              <hr />
+              <li>
+                <div class="task-control">
+                  <input type="checkbox" value="Task 02" name="tasks02" id="task02" checked />
+                  <label for="task02"> Task 2 </label>
+                </div>
+              </li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <script type="module" src="src/js/main.js"></script>
   </body>
