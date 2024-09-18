@@ -83,7 +83,7 @@
           </div>
         </div>
       </main>
-
+      <hr />
       <section class="todolist-container">
         <div class="todolist__content">
           <h2>TODOLIST</h2>
@@ -96,29 +96,27 @@
         <div class="todolist__wrapper">
           <form id="todolist__form">
             <div class="todolist__control">
-              <input type="text" placeholder="Adicione uma tarefa" />
-              <button id="todlist__btn">
+              <input type="text" placeholder="Adicione uma tarefa" class="todolist__input" />
+              <button id="todolist__btn">
                 <img src="src/assets/images/plus.svg" alt="add task" />
               </button>
             </div>
           </form>
         </div>
 
-        <div class="todolist__wrapper tasks">
-          <div class="todolist__control todolist__control--task">
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" value="Task 1" name="tasks" />
-                  Task 1
-                  <button type="button" class="btn-removeTask">
-                    <img src="src/assets/images/trash.svg" alt="remove task" />
-                  </button>
-                </label>
-                <hr />
-              </li>
-            </ul>
-          </div>
+        <div class="todolist__wrapper">
+          <ul class="todolist__tasks">
+            <li>
+              <label>
+                <input type="checkbox" value="Task 1" name="tasks" />
+                Task 1
+                <button type="button" class="btn-removeTask">
+                  <img src="src/assets/images/trash.svg" alt="remove task" />
+                </button>
+              </label>
+              <hr />
+            </li>
+          </ul>
         </div>
       </section>
     </div>

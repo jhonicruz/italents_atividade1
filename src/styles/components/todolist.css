@@ -1,3 +1,78 @@
 .todolist-container {
-  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  height: 100%;
 }
+
+.todolist__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  line-height: 1.4;
+  height: 400px;
+}
+.todolist__content h2 {
+  font-family: 'poppinsbold';
+  font-size: clamp(4rem, 6vw, 8rem);
+  color: var(--primaryColor);
+  line-height: 1;
+}
+.todolist__content p {
+  font-size: 2.4rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+.todolist__wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.todolist__control {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.todolist__input {
+  width: 100%;
+  height: 5.4rem;
+  border: 6px;
+  border: none;
+  padding: 1.2rem 3.3rem;
+  color: var(--Neutral_04);
+  font-size: 2rem;
+  background-color: var(--neutral02);
+  border-radius: 5px;
+}
+
+.todolist__input:focus {
+  outline-color: var(--primaryColor);
+}
+
+#todolist__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: var(--primaryColor);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+#todolist__btn img {
+  width: 25px;
+  height: 25px;
+}
+
+/* .todolist__tasks {
+  background-color: blue;
+} */
