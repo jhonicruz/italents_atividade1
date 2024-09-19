@@ -158,3 +158,13 @@ input[type='checkbox']:checked::after {
   cursor: not-allowed;
   pointer-events: none;
 }
+
+.error {
+  margin: 0.8rem 2rem;
+  color: #fc1b39;
+  transition: 0.3s;
+}
+
+.hidden {
+  display: none !important;
+}
