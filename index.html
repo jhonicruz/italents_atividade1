@@ -97,26 +97,18 @@
           <form id="todolist__form">
             <div class="todolist__control">
               <input type="text" placeholder="Adicione uma tarefa" class="todolist__input" />
-              <button id="todolist__btn">
+
+              <button id="todolist__btn" type="submit">
                 <img src="src/assets/images/plus.svg" alt="add task" />
               </button>
             </div>
+            <p class="error hidden"></p>
           </form>
         </div>
 
         <div class="todolist__wrapper">
           <ul class="todolist__tasks">
-            <li>
-              <div class="task-control">
-                <input type="checkbox" value="Task 1" name="tasks" id="task1" />
-                <label for="task1"> Task 1 </label>
-              </div>
-              <button type="button" class="btn-removeTask">
-                <img src="src/assets/images/trash.svg" alt="remove task" />
-              </button>
-            </li>
-            <hr />
-            <li>
+            <!-- <li>
               <div class="task-control">
                 <input type="checkbox" value="Task 2" name="tasks2" id="task2" />
                 <label for="task2"> Task 2 </label>
@@ -125,34 +117,20 @@
                 <img src="src/assets/images/trash.svg" alt="remove task" />
               </button>
             </li>
-            <hr />
+            <hr /> -->
           </ul>
         </div>
 
         <div>
           <div class="todolist__wrapper">
             <p class="tasks-completed">Completed</p>
-            <ul class="todolist__tasks completed">
-              <li>
-                <div class="task-control">
-                  <input type="checkbox" value="Task 01" name="tasks01" id="task01" checked />
-                  <label for="task01"> Task 1 </label>
-                </div>
-              </li>
-              <hr />
-              <li>
-                <div class="task-control">
-                  <input type="checkbox" value="Task 02" name="tasks02" id="task02" checked />
-                  <label for="task02"> Task 2 </label>
-                </div>
-              </li>
-              <hr />
-            </ul>
+            <ul class="todolist__tasks completed"></ul>
           </div>
         </div>
       </section>
     </div>
 
+    <script src="./src//js/modules/todolist.js"></script>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
