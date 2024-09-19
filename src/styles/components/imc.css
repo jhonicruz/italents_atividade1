@@ -32,6 +32,11 @@
   margin-top: 4rem;
 }
 
+.resultado ~ p {
+  font-size: 2rem;
+  font-family: bold;
+}
+
 .form-control {
   display: flex;
   flex-direction: column;
@@ -44,6 +49,7 @@
   height: 4rem;
   border: none;
   padding: 1rem 2rem;
+  font-size: 2rem;
 }
 
 .form-control input:focus {
@@ -61,4 +67,11 @@
   color: var(--neutral04);
   font-size: 2rem;
   cursor: pointer;
+}
+
+.error.error-imc {
+  width: 100%;
+  justify-self: flex-start;
+  margin: 0;
+  margin-top: 1rem;
 }

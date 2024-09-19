@@ -91,16 +91,18 @@
             <div class="wrapper-form">
               <div class="form-control">
                 <label for="altura">Altura</label>
-                <input type="text" id="altura" />
+                <input type="text" id="altura" placeholder="1.80" maxlength="4" />
               </div>
               <div class="form-control">
                 <label for="peso">Peso</label>
-                <input type="text" id="peso" />
+                <input type="text" id="peso" placeholder="72" />
               </div>
             </div>
 
             <input id="calculate-imc" type="submit" value="CALCULAR" />
           </form>
+
+          <p class="error error-imc hidden">Erro</p>
           <div class="resultado">
             <p>Resultado</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quasi exp</p>
