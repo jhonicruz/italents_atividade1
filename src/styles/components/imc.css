@@ -1,0 +1,77 @@
+.bc.form {
+  display: flex;
+  align-items: start;
+  gap: 9rem;
+  height: 70%;
+}
+
+.container-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 40%;
+}
+.imc-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 4rem;
+}
+
+.wrapper-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resultado {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.resultado ~ p {
+  font-size: 2rem;
+  font-family: bold;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+.form-control input {
+  border-radius: 6px;
+  height: 4rem;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+
+.form-control input:focus {
+  outline-color: var(--primaryColor);
+}
+#calculate-imc {
+  display: flex;
+  width: 100%;
+  align-self: flex-start;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--accentColor);
+  color: var(--neutral04);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.error.error-imc {
+  width: 100%;
+  justify-self: flex-start;
+  margin: 0;
+  margin-top: 1rem;
+}
