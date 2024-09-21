@@ -1,0 +1,13 @@
+.content {
+  gap: 2rem;
+  flex-basis: 50%;
+  height: 100%;
+}
+
+@media (max-width: 50.6rem) {
+  .content {
+    order: -1;
+    max-width: 500px;
+    text-align: center;
+  }
+}

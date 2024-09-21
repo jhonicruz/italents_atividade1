@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="global_container">
-      <header class="header">
+      <header class="header flex items-center justify-between w-full">
         <a href="#" class="header__logo">Logo</a>
 
         <nav class="nav">
@@ -29,13 +29,13 @@
         </nav>
       </header>
 
-      <main class="main_container">
-        <div class="bc">
-          <div class="bc__calc">
-            <div class="bc_calc__wrapper">
-              <p class="bc__result"></p>
+      <main class="container flex justify-center items-center">
+        <div class="container flex justify-center items-center gap-4">
+          <div class="calc flex justify-center items-center">
+            <div class="calc-wrapper flex flex-col">
+              <p class="calc-result"></p>
 
-              <table class="bc__table">
+              <table class="table">
                 <tr>
                   <td><button class="btnClear">C</button></td>
                   <td><button class="back"><</button></td>
@@ -70,25 +70,22 @@
             </div>
           </div>
 
-          <div class="bc__content">
-            <h1>BASIC CALC</h1>
-            <p>
+          <div class="content flex flex-col justify-center">
+            <h1 class="title">BASIC CALC</h1>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
             </p>
           </div>
         </div>
       </main>
       <hr />
 
-      <section class="bc form">
-        <div class="container-form">
-          <form class="imc-form">
-            <div class="wrapper-form">
+      <!-- IMC -->
+
+      <section class="container flex items-center justify-center gap-4">
+        <div class="flex flex-col justify-end items-end basis-half">
+          <form class="flex flex-col items-end gap-4 bounderie">
+            <div class="flex flex-col gap-2 w-full">
               <div class="form-control">
                 <label for="altura">Altura</label>
                 <input type="text" id="altura" placeholder="1.80" maxlength="4" />
@@ -103,29 +100,25 @@
           </form>
 
           <p class="error error-imc hidden">Erro</p>
-          <div class="resultado">
-            <p>Resultado</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quasi exp</p>
-          </div>
+          <div class="resultado bounderie"></div>
         </div>
 
-        <div class="bc__content">
-          <h1>IMC CALC</h1>
-          <p>
+        <div class="content flex flex-col justify-center basis-half">
+          <h1 class="title">IMC CALC</h1>
+          <p class="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           </p>
         </div>
       </section>
       <hr />
-      <section class="todolist-container">
-        <div class="todolist__content">
-          <h2>TODOLIST</h2>
-          <p>
+
+      <!-- TODOLIST -->
+
+      <section class="flex flex-col gap-4 h-full padding-1">
+        <div class="flex flex-col items-center justify-center gap-2 h-half">
+          <h2 class="title">TODOLIST</h2>
+          <p class="paragraph-center bounderie-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </p>
@@ -133,10 +126,10 @@
 
         <div class="todolist__wrapper">
           <form id="todolist__form">
-            <div class="todolist__control">
+            <div class="flex items-center gap-2">
               <input type="text" placeholder="Adicione uma tarefa" class="todolist__input" />
 
-              <button id="todolist__btn" type="submit">
+              <button id="todolist__btn" class="flex justify-center items-center" type="submit">
                 <img src="src/assets/images/plus.svg" alt="add task" />
               </button>
             </div>

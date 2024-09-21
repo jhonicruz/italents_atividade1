@@ -1,0 +1,34 @@
+.calc {
+  flex-basis: 50%;
+  min-height: 500px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.calc-wrapper {
+  width: 33rem;
+  max-height: 50rem;
+  gap: 2rem;
+  padding: 2.5rem 2rem;
+  border-radius: 6px;
+  background-color: var(--neutral03);
+}
+
+.calc-result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 6rem;
+  padding: 1rem;
+  box-shadow: var(--boxShadow);
+  border-radius: 3px;
+}
+
+@media (max-width: 50rem) {
+  .calc-wrapper {
+    width: 33rem;
+    max-height: 50rem;
+  }
+}
