@@ -4,3 +4,7 @@
 @import './components/basic_calc.css';
 @import './components/imc.css';
 @import './components/todolist.css';
+@import './components/content.css';
+@import './components/table.css';
+@import './components/calc.css';
+@import './util/util.css';

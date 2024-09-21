@@ -1,0 +1,45 @@
+.global_container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+}
+.title {
+  font-family: 'poppinsbold';
+  font-size: clamp(4rem, 6vw, 8rem);
+  color: var(--primaryColor);
+  line-height: 1;
+}
+
+.paragraph {
+  font-size: 2.4rem;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 50.6rem) {
+  .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

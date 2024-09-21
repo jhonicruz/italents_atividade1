@@ -1,5 +1,5 @@
 export default function initCalc() {
-  const result = document.querySelector('.bc__result');
+  const result = document.querySelector('.calc-result');
   const btnNumbers = document.querySelectorAll('.btnNumbers');
   const btnClear = document.querySelector('.btnClear');
   const btnOperators = document.querySelectorAll('.operators');
