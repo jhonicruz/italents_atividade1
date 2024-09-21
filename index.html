@@ -33,38 +33,38 @@
         <div class="container flex justify-center items-center gap-4">
           <div class="calc flex justify-center items-center">
             <div class="calc-wrapper flex flex-col">
-              <p class="calc-result"></p>
+              <p class="calc-result" data-result></p>
 
               <table class="table">
                 <tr>
-                  <td><button class="btnClear">C</button></td>
-                  <td><button class="back"><</button></td>
-                  <td><button class="operators">/</button></td>
-                  <td><button class="operators">x</button></td>
+                  <td><button data-clear>C</button></td>
+                  <td><button data-back><</button></td>
+                  <td><button data-operators>/</button></td>
+                  <td><button data-operators>x</button></td>
                 </tr>
                 <tr>
-                  <td><button class="btnNumbers">7</button></td>
-                  <td><button class="btnNumbers">8</button></td>
-                  <td><button class="btnNumbers">9</button></td>
-                  <td><button class="operators">-</button></td>
+                  <td><button data-numbers>7</button></td>
+                  <td><button data-numbers>8</button></td>
+                  <td><button data-numbers>9</button></td>
+                  <td><button data-operators>-</button></td>
                 </tr>
                 <tr>
-                  <td><button class="btnNumbers">4</button></td>
-                  <td><button class="btnNumbers">5</button></td>
-                  <td><button class="btnNumbers">6</button></td>
-                  <td><button class="operators">+</button></td>
+                  <td><button data-numbers>4</button></td>
+                  <td><button data-numbers>5</button></td>
+                  <td><button data-numbers>6</button></td>
+                  <td><button data-operators>+</button></td>
                 </tr>
                 <tr>
-                  <td><button class="btnNumbers">1</button></td>
-                  <td><button class="btnNumbers">2</button></td>
-                  <td><button class="btnNumbers">3</button></td>
-                  <td rowspan="2"><button id="equal">=</button></td>
+                  <td><button data-numbers>1</button></td>
+                  <td><button data-numbers>2</button></td>
+                  <td><button data-numbers>3</button></td>
+                  <td rowspan="2"><button id="equal" data-equal>=</button></td>
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <button id="zero" class="btnNumbers">0</button>
+                    <button id="zero" data-numbers>0</button>
                   </td>
-                  <td><button class="btnNumbers">.</button></td>
+                  <td><button data-numbers>.</button></td>
                 </tr>
               </table>
             </div>
@@ -84,7 +84,7 @@
 
       <section class="container flex items-center justify-center gap-4">
         <div class="flex flex-col justify-end items-end basis-half">
-          <form class="flex flex-col items-end gap-4 bounderie">
+          <form class="flex flex-col items-end gap-4 bounderie" data-form>
             <div class="flex flex-col gap-2 w-full">
               <div class="form-control">
                 <label for="altura">Altura</label>
@@ -156,7 +156,7 @@
       </footer>
     </div>
 
-    <script src="./src//js/modules/todolist.js"></script>
+    <script src="./src/js/modules/todolist.js"></script>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

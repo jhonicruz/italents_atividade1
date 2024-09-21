@@ -1,5 +1,5 @@
 export default function initImc() {
-  const formImc = document.querySelector('.imc-form');
+  const formImc = document.querySelector('[data-form]');
 
   const inputAltura = document.querySelector('#altura');
   const inputPeso = document.querySelector('#peso');
