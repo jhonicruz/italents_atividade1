@@ -1,17 +1,3 @@
-.bc.form {
-  display: flex;
-  align-items: start;
-  gap: 9rem;
-  height: 70%;
-}
-
-.container-form {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: column;
-  width: 40%;
-}
 .imc-form {
   display: flex;
   flex-direction: column;
@@ -67,11 +53,4 @@
   color: var(--neutral04);
   font-size: 2rem;
   cursor: pointer;
-}
-
-.error.error-imc {
-  width: 100%;
-  justify-self: flex-start;
-  margin: 0;
-  margin-top: 1rem;
 }
