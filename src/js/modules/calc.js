@@ -1,14 +1,10 @@
 export default function initCalc() {
-  const result = document.querySelector('.calc-result');
-  const btnNumbers = document.querySelectorAll('.btnNumbers');
-  const btnClear = document.querySelector('.btnClear');
-  const btnOperators = document.querySelectorAll('.operators');
-  const back = document.querySelector('.back');
-  const btnEqual = document.querySelector('#equal');
-
-  btnOperators.forEach((btn) => {
-    console.log(btn.innerHTML);
-  });
+  const result = document.querySelector('[data-result]');
+  const btnNumbers = document.querySelectorAll('[data-numbers]');
+  const btnClear = document.querySelector('[data-clear]');
+  const btnOperators = document.querySelectorAll('[data-operators]');
+  const back = document.querySelector('[data-back]');
+  const btnEqual = document.querySelector('[data-equal]');
 
   function insert({ target }) {
     const number = target.innerHTML;
@@ -21,6 +17,8 @@ export default function initCalc() {
 
   function calculate() {
     const expression = result.innerHTML.replace(/x/g, '*');
+    if (result.innerHTML.length === 0) return;
+    console.log(typeof result.innerHTML);
     result.innerHTML = eval(expression);
   }
 
@@ -29,13 +27,11 @@ export default function initCalc() {
   });
 
   btnClear.addEventListener('click', clean);
-
   btnNumbers.forEach((btn) => {
     btn.addEventListener('click', insert);
   });
   btnOperators.forEach((btnOperator) => {
     btnOperator.addEventListener('click', insert);
   });
-
   btnEqual.addEventListener('click', calculate);
 }
