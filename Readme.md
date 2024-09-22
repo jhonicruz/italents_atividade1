@@ -34,8 +34,9 @@ Criação de página Apenas com HTML, CSS e JavaScript, que tenha algumas ferram
 ### Entrega
 
 O acesso ao projeto finalizado será disponilibilizado no GitHub Pages. O link será disponibilizado no repositório da atividade.
-Github: [Atividade 1 - Uso de recursos JavaScript](https://github.com/jhonicruz/italents_atividade1)
-GithubPages: [Atividade 1 - Uso de recursos JavaScript](https://jhonicruz.github.io/italents_atividade1/)
+Github: [Atividade 1 - Github](https://github.com/jhonicruz/italents_atividade1)
+GithubPages: [Atividade 1 - Veja ao vivo](https://jhonicruz.github.io/italents_atividade1/)
+Figma: [Atividade 1 - Figma](https://www.figma.com/design/iuTyg29AHTACu7lOIBmMXL/Atividade-iTalents?node-id=0-1&t=nyq6fbe0q04UlSw3-1)
 
 ### Instalação
 
