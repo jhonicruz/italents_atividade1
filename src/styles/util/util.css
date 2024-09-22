@@ -113,13 +113,13 @@
 }
 
 .error {
-  margin: 0.8rem 2rem;
-  color: #fc1b39;
-  transition: 0.3s;
-  width: 100%;
+  display: flex;
   justify-self: flex-start;
-  margin: 0;
-  margin-top: 1rem;
+  width: 100%;
+
+  margin-top: 2rem;
+  transition: 0.3s;
+  color: #fc1b39;
 }
 
 .hidden {

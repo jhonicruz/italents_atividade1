@@ -1,15 +1,15 @@
 export default function initImc() {
   const formImc = document.querySelector('[data-form]');
-
-  const inputAltura = document.querySelector('#altura');
-  const inputPeso = document.querySelector('#peso');
-  const error = document.querySelector('.error');
+  const inputAltura = document.getElementById('altura');
+  const inputPeso = document.getElementById('peso');
+  const error = document.querySelector('[data-error="imc"]');
   const resultRoot = document.querySelector('.resultado');
 
   const errorsTypes = {
     heightEmpty: 'Por favor, digite um valor para o Altura',
-    heightRegex: 'A altura deve conter um valor válido',
+    heightInvalid: 'A altura deve conter um valor válido',
     weigthEmpty: 'Por favor, digite um valor para o Peso',
+    weightInvalid: 'O peso deve conter apenas números',
     allEmpty: 'Por favor, preencha os valores de Altura e Peso',
     numberLimit: 'Digite apenas 2 números para representar os centímetros',
   };
@@ -23,30 +23,39 @@ export default function initImc() {
 
   function validateValues(altura, peso) {
     const novaAltura = altura.replace(',', '.').trim();
+    const novoPeso = peso.trim();
 
     // Regex para validar a altura no formato correto
     const alturaRegex = /^([0-2](?:\.\d{1,2})?)$/;
+    // Regex para validar que o peso contém apenas números
+    const pesoRegex = /^\d+$/;
 
-    if (novaAltura === '' && peso === '') {
+    if (novaAltura === '' && novoPeso === '') {
       error.innerHTML = errorsTypes.allEmpty;
       error.classList.remove('hidden');
+      resultRoot.innerHTML = '';
       return false;
     } else if (novaAltura === '') {
-      error.innerHTML = errorsTypes.heightEmpty;
-      error.classList.remove('hidden');
       return false;
-    } else if (peso === '') {
-      error.innerHTML = errorsTypes.weigthEmpty;
-      error.classList.remove('hidden');
+    } else if (novoPeso === '') {
+      setError(errorsTypes.weigthEmpty);
       return false;
     } else if (!alturaRegex.test(novaAltura)) {
-      error.innerHTML = errorsTypes.heightRegex;
-      error.classList.remove('hidden');
+      setError(errorsTypes.heightInvalid);
+      return false;
+    } else if (!pesoRegex.test(novoPeso)) {
+      setError(errorsTypes.weightInvalid);
       return false;
     } else {
       error.classList.add('hidden');
       return true;
     }
+  }
+
+  function setError(error) {
+    error.innerHTML = error;
+    error.classList.remove('hidden');
+    resultRoot.innerHTML = '';
   }
 
   function calculateImc(altura, peso) {
@@ -55,6 +64,8 @@ export default function initImc() {
   }
 
   function showResult(result) {
+    resultRoot.innerHTML = '';
+
     if (result > 40) {
       resultRoot.innerHTML = `
           <p style="font-weight: bold;font-size:2rem">Resultado</p>

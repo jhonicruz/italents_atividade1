@@ -3,7 +3,7 @@ const addForm = document.getElementById('todolist__form');
 const ulRoot = document.querySelector('.todolist__tasks');
 const ulRootCompleted = document.querySelector('.todolist__tasks.completed');
 
-const error = document.querySelector('.error');
+const error = document.querySelector('[data-error="todolist"]');
 
 let tasks = [];
 
@@ -28,12 +28,14 @@ function handleSubmit(e) {
     error.classList.remove('hidden');
     error.innerText = errorTypes.existTask;
     addInput.focus();
+    console.log('Ja existe');
   } else {
-    // Se não tiver vazio adiciona uma tarefa
+    // Se não tiver vazio ou não existe adiciona uma tarefa
     createTask(task);
     error.classList.add('hidden');
     clearInput();
     addInput.focus();
+    console.log('ok');
   }
 }
 
