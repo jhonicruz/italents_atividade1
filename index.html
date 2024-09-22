@@ -21,15 +21,15 @@
           >
             <span id="hamburguer"></span>
           </button>
-          <ul id="menu" role="menu">
-            <li><a href="#">CALC</a></li>
-            <li><a href="#">IMC</a></li>
-            <li><a href="#">TODOLIST</a></li>
+          <ul id="menu" role="menu" data-menu="scroll">
+            <li><a href="#calculator">CALC</a></li>
+            <li><a href="#imc">IMC</a></li>
+            <li><a href="#todolist">TODOLIST</a></li>
           </ul>
         </nav>
       </header>
 
-      <main class="container flex justify-center items-center">
+      <main id="calculator" class="container flex justify-center items-center" data-menu="section">
         <div class="container flex justify-center items-center gap-4">
           <div class="calc flex justify-center items-center">
             <div class="calc-wrapper flex flex-col">
@@ -82,7 +82,11 @@
 
       <!-- IMC -->
 
-      <section class="container flex items-center justify-center gap-4">
+      <section
+        id="imc"
+        class="container flex items-center justify-center gap-4"
+        data-menu="section"
+      >
         <div class="flex flex-col justify-end items-end basis-half">
           <form class="flex flex-col items-end gap-4 bounderie" data-form>
             <div class="flex flex-col gap-2 w-full">
@@ -115,7 +119,7 @@
 
       <!-- TODOLIST -->
 
-      <section class="flex flex-col gap-4 h-full padding-1">
+      <section id="todolist" class="flex flex-col gap-4 h-full padding-1" data-menu="section">
         <div class="flex flex-col items-center justify-center gap-2 h-half">
           <h2 class="title">TODOLIST</h2>
           <p class="paragraph-center bounderie-medium">
